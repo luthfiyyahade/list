@@ -1,0 +1,22 @@
+get http://localhost:8080/api/todo
+
+###
+post http://localhost:8080/api/todo
+Content-Type: application/json
+
+{
+    "name": "project 2",
+    "status": "false"
+}
+
+###
+put http://localhost:8080/api/todo/2
+Content-Type: application/json
+
+{
+    "name": "project 3" ,
+    "status": "true"
+}
+
+###
+delete http://localhost:8080/api/todo/1
